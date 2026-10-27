@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ytup · Privacy Policy / 隐私权政策</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0 auto; max-width: 760px; padding: 48px 24px 80px;
+         font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+         line-height: 1.75; color: #1a1a1a; background: #fff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 18px; margin-top: 36px; border-left: 3px solid #1a73e8; padding-left: 10px; }
+  .meta { color: #5f6368; font-size: 14px; margin-bottom: 32px; }
+  .en { color: #5f6368; font-size: 14px; }
+  code { background: #f1f3f4; padding: 1px 5px; border-radius: 3px; font-size: 13px; }
+  a { color: #1a73e8; }
+  .box { background: #f8f9fa; border-radius: 8px; padding: 16px 20px; margin: 20px 0; }
+  footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid #e8eaed;
+           color: #5f6368; font-size: 13px; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8eaed; background: #1f1f1f; }
+    code, .box { background: #2d2d2d; }
+    footer { border-color: #3c3c3c; }
+  }
+</style>
+</head>
+<body>
+
+<h1>隐私权政策</h1>
+<p class="meta">Privacy Policy · 最后更新：2026 年 10 月 27 日</p>
+
+<h2>1. 适用范围</h2>
+<p><strong>ytup</strong>（以下称「本应用」）是部署在运营者个人计算机上的本地命令行工具，用于通过 YouTube Data API v3 将运营者自己制作的视频上传到<strong>运营者本人的 YouTube 频道</strong>。</p>
+<p>本应用不对外提供注册、登录或账号服务，<strong>不收集、不处理任何第三方用户的个人数据</strong>。使用本应用的用户即为运营者本人。</p>
+
+<h2>2. 使用的 Google API 服务</h2>
+<div class="box">
+  <p>本应用使用 <strong>YouTube API Services</strong>。使用本应用即表示您同意受
+  <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube 服务条款</a> 约束。</p>
+  <p>本应用同时受 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隐私权政策</a> 约束。</p>
+</div>
+<p class="en">This application uses YouTube API Services. By using this application you agree to be bound by the
+YouTube Terms of Service. This application is also subject to the Google Privacy Policy.</p>
+
+<h2>3. 访问的数据</h2>
+<p>在获得频道所有者明确授权（OAuth 2.0）后，本应用仅访问以下数据：</p>
+<ul>
+  <li>授权账号所属频道的频道 ID 与频道名称（用于核对是否授权到正确频道）；</li>
+  <li>该频道自有视频的上传状态与处理状态；</li>
+  <li>向该频道写入视频、封面、播放列表条目与字幕所需的最小权限。</li>
+</ul>
+<p>本应用<strong>不读取其他用户的任何数据</strong>，不读取评论内容，不访问观看记录、订阅关系或任何非自有频道的数据。</p>
+
+<h2>4. 数据的存储与传输</h2>
+<ul>
+  <li>OAuth 凭据（<code>refresh_token</code> / <code>access_token</code>）<strong>仅保存在运营者本机磁盘</strong>，路径为项目目录下的 <code>profiles/</code> 与 <code>state/</code>。</li>
+  <li>本应用<strong>不设立任何服务器</strong>，不将上述凭据或任何数据上传至运营者自建的云端或第三方存储。</li>
+  <li>数据仅在运营者本机与 Google 官方 API 端点（<code>googleapis.com</code>）之间直接传输，全程使用 HTTPS。</li>
+  <li>本应用不使用 Cookie，不使用任何第三方分析、广告或跟踪服务。</li>
+</ul>
+
+<h2>5. 数据的共享</h2>
+<p>本应用<strong>不出售、不出租、不交换、不向任何第三方披露</strong>任何数据。除向 Google 的 YouTube API 发送上传与查询请求这一必要行为外，不存在其他数据流向。</p>
+
+<h2>6. 数据保留与删除</h2>
+<p>运营者可随时通过以下任一方式撤销授权并删除数据：</p>
+<ul>
+  <li>删除本机的 <code>profiles/&lt;profile&gt;/token.json</code> 文件；</li>
+  <li>访问 <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google 账号权限页</a>，移除本应用的访问权限。</li>
+</ul>
+<p>撤销后，本应用将立即失去访问该频道数据的能力。删除文件后，本机不再保留任何与授权相关的凭据。</p>
+
+<h2>7. 未成年人</h2>
+<p>本应用不面向未成年人，也不会有意收集未成年人的任何信息。</p>
+
+<h2>8. 政策变更</h2>
+<p>本政策如有变更，将更新本页顶部的「最后更新」日期。重大变更会在本页显著位置说明。</p>
+
+<h2>9. 联系方式</h2>
+<p>如有疑问，请联系：<a href="mailto:wumajie.hechuan@gmail.com">wumajie.hechuan@gmail.com</a></p>
+
+<footer>
+  <p>ytup · 本地 YouTube 上传工具 · <a href="./index.html">首页</a> · <a href="./terms.html">服务条款</a></p>
+</footer>
+
+</body>
+</html>

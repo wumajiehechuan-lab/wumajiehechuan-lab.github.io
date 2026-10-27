@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ytup · 本地 YouTube 上传工具</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0 auto; max-width: 720px; padding: 72px 24px 80px;
+         font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+         line-height: 1.75; color: #1a1a1a; background: #fff; }
+  h1 { font-size: 32px; margin: 0 0 8px; letter-spacing: -0.5px; }
+  .lead { color: #5f6368; font-size: 17px; margin-bottom: 40px; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  a { color: #1a73e8; }
+  .cards { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 40px; }
+  .card { flex: 1 1 200px; border: 1px solid #e8eaed; border-radius: 10px;
+          padding: 16px 18px; text-decoration: none; color: inherit; }
+  .card b { display: block; margin-bottom: 4px; }
+  .card span { color: #5f6368; font-size: 14px; }
+  footer { margin-top: 56px; color: #5f6368; font-size: 13px; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8eaed; background: #1f1f1f; }
+    .card { border-color: #3c3c3c; }
+  }
+</style>
+</head>
+<body>
+
+<h1>ytup</h1>
+<p class="lead">一个跑在个人计算机上的 YouTube 上传工具，通过官方 YouTube Data API v3 工作。</p>
+
+<p>ytup 用于把本地渲染完成的视频发布到运营者自己的频道。它不提供在线服务、不接受第三方注册、不收集任何用户数据：所有处理都在本机完成，凭据也只保存在本机。</p>
+
+<ul>
+  <li>使用官方 <strong>YouTube Data API v3</strong>，不依赖任何第三方中转服务</li>
+  <li>OAuth 2.0 授权，权限范围限定为 <code>youtube.force-ssl</code></li>
+  <li>无服务器、无数据库、无跟踪脚本</li>
+</ul>
+
+<div class="cards">
+  <a class="card" href="./privacy.html">
+    <b>隐私权政策</b>
+    <span>数据如何被访问、存储与删除</span>
+  </a>
+  <a class="card" href="./terms.html">
+    <b>服务条款</b>
+    <span>使用条件与责任说明</span>
+  </a>
+</div>
+
+<footer>
+  <p>本应用使用 YouTube API Services。使用本应用即表示同意受
+  <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube 服务条款</a> 约束。</p>
+</footer>
+
+</body>
+</html>
